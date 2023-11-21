@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#home {
+    background: linear-gradient(rgba(0,0,0, 0.2),	#00f7ff), url(../Images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.logo img {
+    height: 50px;
+    position: absolute;
+    top: 3%;
+    left: 8%;
+}
+
+.shop-name {
+    text-align: center;
+    padding-top: 30%;
+    color: #fff;
+}
+.shop-name h1 {
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.shop-name p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.about-us {
+    text-align: center;
+    margin: 60px auto;
+}
+
+.about-us a {
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    width: 100px;
+    padding: 6px 0;
+    vertical-align: center;
+    margin: 0 10px;
+    position: relative;
+    transition: color 0.15s;
+    z-index: 0;
+}
+
+span {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    transition: 0.15s;
+    z-index: -1;
+}
+
+.about-us a:hover span {
+    height: 100%;
+}
+
+.about-us a:hover {
+    color: #000;
+}
+
