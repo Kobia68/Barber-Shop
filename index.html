@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Barbershop.com</title>
+    
     <link rel="stylesheet" href="Styles/home.css">
+    <link rel="stylesheet" href="Styles/sidebar.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +25,40 @@
             <a href="#"><span></span>Read more</a>
         </div>
     </section>
+
+    <section>
+        <nav id="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">About us</a></li>
+            </ul>
+            <div id="sidebtn">
+                <img id="menu" src="Images/menu.png" alt="">
+            </div>
+        </nav>
+    </section>
+
+    <script>
+        var sidebtn = document.getElementById("sidebtn")
+        var sidebar = document.getElementById("sidebar")
+        var menu = document.getElementById("menu")
+
+        sidebar.style.right = "-250px"
+
+        sidebtn.onclick = function(){
+            if(sidebar.style.right == "-250px"){
+                sidebar.style.right = "0";
+                menu.src = "Images/close.png";
+        }
+        else {
+            sidebar.style.right = "-250px";
+            menu.src = "Images/menu.png";
+        }
+    }
+    </script>
 
 
 </body>

@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 #home {
-    background: linear-gradient(rgba(0,0,0, 0.2),	#00f7ff), url(../Images/banner.jpg);
+    background: linear-gradient(rgba(0,0,0, 0.2),	#009688), url(../Images/banner.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -69,5 +69,31 @@ span {
 
 .about-us a:hover {
     color: #000;
+}
+
+@media (max-width: 730px) {
+    .shop-name h1 {
+        font-size: 45px;
+        font-family: 'Kaushan Script', cursive;
+    }
+    .shop-name p {
+        font-size: 14px;
+        font-style: italic;
+    }
+    .about-us a {
+        width: 80px;
+        font-size: 12px;
+        display: block;
+        margin: 20px auto;
+    }
+    .logo img {
+        height: 40px
+    }
+}
+
+@media (max-height: 500px) {
+    #home {
+        height: 500px
+    }
 }
 
